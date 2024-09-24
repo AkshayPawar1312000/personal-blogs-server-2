@@ -31,13 +31,13 @@ To run this project, you will need to have the following installed on your machi
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/personal-blog-server.git
+    git clone https://github.com/AkshayPawar1312000/personal-blogs-server-2.git
     ```
 
 2. Navigate into the project directory:
 
     ```bash
-    cd personal-blog-server
+    cd personal-blog-server-2
     ```
 
 3. Install dependencies:
@@ -56,19 +56,14 @@ To run this project, you will need to have the following installed on your machi
     JWT_SECRET=your_jwt_secret
     ```
 
-5. Run database migrations (if applicable):
 
-    ```bash
-    npx sequelize db:migrate
-    ```
-
-6. Start the server:
+5. Start the server:
 
     ```bash
     npm start
     ```
 
-7. The server should now be running on `http://localhost:3000`.
+6. The server should now be running on `http://localhost:5000`.
 
 ## API Endpoints
 
@@ -76,20 +71,20 @@ Here are some of the available API routes:
 
 ### Blog Routes
 
-- `POST /blogs` - Create a new blog post (with image upload).
-- `GET /blogs` - Retrieve all blog posts.
-- `GET /blogs/:id` - Retrieve a single blog post by ID.
-- `PUT /blogs/:id` - Update an existing blog post.
-- `DELETE /blogs/:id` - Delete a blog post.
+- `POST /personalBlog` - Create a new blog post (with image upload).
+- `GET /personalBlogs` - Retrieve all blog posts.
+- `GET /personalBlog/:id` - Retrieve a single blog post by ID.
+- `PUT /updateBlog/:id` - Update an existing blog post.
+- `DELETE /delete/:id` - Delete a blog post.
 
 ### Authentication Routes
 
-- `POST /users/register` - Register a new user.
-- `POST /users/login` - User login and JWT token generation.
+- `POST /user` - Register a new user.
+- `POST /userLogin` - User login and JWT token generation.
 
 ## Testing
 
 To run the unit tests with Jest:
 
 ```bash
-npm test
+npm run test
